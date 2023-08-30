@@ -51,20 +51,21 @@ body {
   background-image: url("img/cover.png");
   background-position: center;
   background-size: cover;
-  opacity: 0.9;
 }
-
-.main-conteiner {
-  padding: 40px 0px 40px 0px;
+.main-conteiner,
+.main-conteiner h2,
+.main-conteiner h4 {
+  justify-content: center;
   align-items: center;
   text-align: center;
+}
+.main-conteiner {
+  padding: 40px 0px 40px 0px;
   height: 411px;
   gap: 40px;
 }
 .main-conteiner h2 {
-  justify-content: center;
   font-weight: 700;
-  text-align: center;
   max-width: 500px;
   font-size: 400%;
   display: flex;
@@ -72,15 +73,14 @@ body {
   margin: auto;
 }
 .main-conteiner h4 {
-  justify-content: center;
   max-width: 500px;
   font-size: 150%;
   display: flex;
   padding: 30px;
   margin: auto;
 }
-#b_gqn,
-#b_lm {
+#button_get_quote,
+#button_learn_more {
   padding: 10px 36px 10px 36px;
   border-radius: 37px;
   font-weight: bold;
@@ -89,18 +89,31 @@ body {
   height: 48px;
   gap: 10px;
 }
-#b_gqn:hover {
-  background: rgb(183, 107, 20);
+#button_get_quote:hover {
+  background: rgba(217, 143, 7, 0.892);
 }
-#b_lm:hover {
+#button_learn_more:hover {
   background: rgba(164, 158, 151, 0.73);
 }
-#b_gqn {
-  background: rgba(255, 166, 43, 1);
+#button_get_quote {
+  background: var(--primary-color);
   border: none;
   width: 185px;
 }
-#b_lm {
+#button_learn_more {
   border: 1px solid rgba(255, 255, 255, 1);
   background: transparent;
+}
+
+@media screen and (min-width: 330px) and (max-width: 770px) {
+  .top_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+    margin-bottom: 100px;
+  }
+  .main-conteiner {
+    font-size: 15px;
+  }
 }
