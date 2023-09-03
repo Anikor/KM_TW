@@ -106,7 +106,7 @@ body {
   background: transparent;
 }
 
-@media screen and (min-width: 330px) and (max-width: 770px) {
+@media screen and (min-width: 340px) and (max-width: 770px) {
   .top_nav {
     display: flex;
     flex-direction: column;
@@ -160,4 +160,25 @@ body {
   align-items: center;
   display: flex;
   gap: 15px;
+}/* grid column */
+@media (max-width: 340px) {
+  .containers {
+    grid-template-columns: 320px;
+    grid-template-rows: repeat(6, 200px);
+  }
+  .main-conteiner h2 {
+    padding: 0px 60px 0px 60px;
+    font-weight: 700;
+    max-width: 500px;
+    font-size: 200%;
+  }
+  .main-conteiner h4 {
+    max-width: 500px;
+    font-size: 150%;
+    padding: 30px;
+    margin: auto;
+  }
+  #button_learn_more {
+    margin-top: 10px;
+  }
 }
