@@ -117,7 +117,12 @@ body {
   .main-conteiner {
     font-size: 15px;
   }
-}
+  /*.containers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  2 columns with equal width 
+    grid-template-rows: repeat(3, 200px);  2 rows with a fixed height of 200px 
+  }*/
+  }
 /* */
 #main-text {
   flex-direction: column;
@@ -160,7 +165,7 @@ body {
   align-items: center;
   display: flex;
   gap: 15px;
-}/* grid column */
+} /* grid column */
 @media (max-width: 340px) {
   .containers {
     grid-template-columns: 320px;
